@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class First {
     public static void main(String[] args) throws Exception {
@@ -9,37 +9,36 @@ public class First {
         System.out.println("1. Add new student in the records");
         System.out.println("2. Update existing records");
         System.out.println("3. Delete student records");
-        System.out.println("View details of students");
+        System.out.println("4. View details of students");
         System.out.println("5. To exit the application");
 
         while(true){
             System.out.println("Enter a choice: ");
             int choice=sc.nextInt();
 
-            if(choice==1){
-                //Add new Student
+            switch(choice){
+                case 1:
+                    //Add new student
+                    break;
 
-            }
+                case 2:
+                    //Update Records
+                    break;
 
-            else if(choice==2){
-                //Update records
+                case 3:
+                    //Delete Records
+                    break;
 
-            }
+                case 4:
+                    //View Details
+                    break;
 
-            else if(choice==3){
-                //Delete student
-            }
+                case 5:
+                    break;
 
-            else if(choice==4){
-                //View Details
-            }
-
-            else if(choice==5){
-                break;
-            }
-
-            else{
-                System.out.println("Wrong choice");
+                default:
+                    System.out.println("Wrong Choice");
+                    break;
             }
         }
     }
